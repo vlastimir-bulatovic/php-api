@@ -1,0 +1,29 @@
+#sidebar-wrapper 
+    position: absolute
+    top: 80px
+    margin-left: -100vw
+    z-index: 100
+    transition-timing-function: ease-in-out
+    -webkit-transition: margin .35s
+    -moz-transition: margin .35s 
+    -o-transition: margin .35s 
+    transition: margin .35s 
+    .sidebar-heading 
+        padding: 0.875rem 1.25rem
+        font-size: 1.2rem
+    .list-group 
+        width: 15rem
+
+#page-content-wrapper 
+    min-width: 100vw
+    position: relative
+    @media (min-width: 768px) 
+        min-width: 0
+        width: 100%
+
+#wrapper.toggled 
+    #sidebar-wrapper 
+        margin-left: -31vw !important
+        @media screen and ( max-width: 991px )
+            margin-left: 0vw !important
+            position: static
